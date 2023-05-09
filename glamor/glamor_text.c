@@ -209,6 +209,7 @@ glamor_text(DrawablePtr drawable, GCPtr gc,
                 glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, 4, nglyph);
             }
         }
+        glamor_finish_for_texture_drm(pixmap);
         glDisable(GL_SCISSOR_TEST);
     }
 

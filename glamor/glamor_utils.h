@@ -748,4 +748,10 @@ glamor_glsl_has_ints(glamor_screen_private *glamor_priv) {
     return glamor_priv->glsl_version >= 130 || glamor_priv->use_gpu_shader4;
 }
 
+static inline void glamor_finish_for_texture_drm(PixmapPtr pixmap) {
+    glamor_pixmap_private *pixmap_priv = glamor_get_pixmap_private(pixmap);
+    if (pixmap_priv->type == GLAMOR_TEXTURE_DRM) {
+        glFinish();
+    }
+}
 #endif

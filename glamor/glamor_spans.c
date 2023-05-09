@@ -142,6 +142,7 @@ glamor_fill_spans_gl(DrawablePtr drawable,
         }
     }
 
+    glamor_finish_for_texture_drm(pixmap);
     ret = TRUE;
 
 bail:
