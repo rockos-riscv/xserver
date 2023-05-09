@@ -106,6 +106,7 @@ glamor_poly_point_gl(DrawablePtr drawable, GCPtr gc, int mode, int npt, DDXPoint
         }
     }
 
+    glamor_finish_for_texture_drm(pixmap);
     ret = TRUE;
 
 bail:
