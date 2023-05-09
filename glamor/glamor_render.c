@@ -1401,6 +1401,7 @@ glamor_composite_with_shader(CARD8 op,
         }
     }
 
+    glamor_finish_for_texture_drm(dest_pixmap);
     glDisable(GL_SCISSOR_TEST);
 disable_va:
     if (restore_colormask)

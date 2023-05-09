@@ -1099,6 +1099,7 @@ glamor_generate_radial_gradient_picture(ScreenPtr screen,
         free(stop_colors);
     }
 
+    glamor_finish_for_texture_drm(pixmap);
     glDisableVertexAttribArray(GLAMOR_VERTEX_POS);
     glDisableVertexAttribArray(GLAMOR_VERTEX_SOURCE);
 
@@ -1443,6 +1444,7 @@ glamor_generate_linear_gradient_picture(ScreenPtr screen,
         free(stop_colors);
     }
 
+    glamor_finish_for_texture_drm(pixmap);
     glDisableVertexAttribArray(GLAMOR_VERTEX_POS);
     glDisableVertexAttribArray(GLAMOR_VERTEX_SOURCE);
 

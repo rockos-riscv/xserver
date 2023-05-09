@@ -297,6 +297,7 @@ glamor_glyphs_flush(CARD8 op, PicturePtr src, PicturePtr dst,
         prog++;
     }
 
+    glamor_finish_for_texture_drm(pixmap);
     glDisable(GL_SCISSOR_TEST);
 
     if (glamor_glsl_has_ints(glamor_priv)) {
