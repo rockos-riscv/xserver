@@ -46,7 +46,11 @@
 
 #define GLAMOR_DEFAULT_PRECISION  \
     "#ifdef GL_ES\n"              \
+    "#ifdef GL_FRAGMENT_PRECISION_HIGH\n" \
+    "precision highp float;\n" \
+    "#else\n" \
     "precision mediump float;\n"  \
+    "#endif\n" \
     "#endif\n"
 
 #define GLAMOR_DEFAULT_POINT_SIZE  \
