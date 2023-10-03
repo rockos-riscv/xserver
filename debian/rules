@@ -9,7 +9,7 @@ deb_udevdir = $(shell pkg-config --variable=udevdir udev)
 endif
 
 %:
-	dh $@ --with quilt
+	dh $@
 
 override_dh_autoreconf-arch: abibumpcheck
 	dh_autoreconf
