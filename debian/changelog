@@ -1,3 +1,9 @@
+xorg-server (2:21.1.13+2rockos1) unstable; urgency=medium
+
+  * trans format 1.0 to 3.0 (native)
+
+ -- Han Gao <gaohan@iscas.ac.cn>  Wed, 09 Oct 2024 16:20:09 +0800
+
 xorg-server (2:21.1.13-2) unstable; urgency=medium
 
   * patches: Fix i386 build with gcc-14.
