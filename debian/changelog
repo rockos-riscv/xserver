@@ -1,6 +1,7 @@
 xorg-server (2:21.1.13+2rockos1) unstable; urgency=medium
 
   * trans format 1.0 to 3.0 (native)
+  * modify glx extension installation directory
 
  -- Han Gao <gaohan@iscas.ac.cn>  Wed, 09 Oct 2024 16:20:09 +0800
 
