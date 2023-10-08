@@ -1,4 +1,15 @@
-usr/lib/xorg/modules
+usr/lib/xorg/modules/extensions usr/share/xorg/glx
+usr/lib/xorg/modules/drivers
+usr/lib/xorg/modules/drivers/modesetting_drv.so
+usr/lib/xorg/modules/input/inputtest_drv.so
+usr/lib/xorg/modules/libexa.so
+usr/lib/xorg/modules/libfbdevhw.so
+usr/lib/xorg/modules/libglamoregl.so
+usr/lib/xorg/modules/libint10.so
+usr/lib/xorg/modules/libshadow.so
+usr/lib/xorg/modules/libshadowfb.so
+usr/lib/xorg/modules/libvgahw.so
+usr/lib/xorg/modules/libwfb.so
 usr/bin/Xorg
 usr/bin/X
 usr/share/man/man1/Xorg.1
