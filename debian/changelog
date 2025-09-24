@@ -1,3 +1,10 @@
+xorg-server (2:21.1.13+2rockos4) unstable; urgency=medium
+
+  * Apply modesetting: property use fb_id of front_bo for reverse PRIME CRTC
+  * Apply modesetting: fix shared pixmap dmabuf fd leakage
+
+ -- Han Gao <rabenda.cn@gmail.com>  Wed, 24 Sep 2025 13:18:13 +0800
+
 xorg-server (2:21.1.13+2rockos3) unstable; urgency=medium
 
   * Apply transform when checking SetScreenSize size patch
